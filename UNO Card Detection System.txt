@@ -1,0 +1,52 @@
+>>>>>>>>>>>>>>>>>>>>UNO Card Detection System
+This project implements a real-time UNO card detection system using Python, OpenCV, and TensorFlow. It utilizes a pre-trained convolutional neural network (CNN) model to detect the number on the cards and applies color detection algorithms based on the HSV color space to recognize the card's color.
+
+>>>>>>>>>>>>>>>>>>>>Features
+Real-Time Number Detection: Uses a CNN model to detect numbers on UNO cards.
+Color Detection: Detects the color of UNO cards using HSV color space.
+Webcam Integration: Real-time detection through a standard webcam.
+
+>>>>>>>>>>>>>>>>>>>>Prerequisites
+Before you run this project, you will need the following:
+
+download anaconda from the given link
+
+https://www.anaconda.com/download
+ 
+Install Required Libraries
+bash
+<<<<
+pip install -r requirements.txt
+The requirements.txt file should contain:
+<<<<
+numpy
+opencv-python
+matplotlib
+tensorflow
+Usage
+To run the UNO card detection system, execute the script uno_card_detector.py:
+<<<<<
+bash
+Copy code
+python uno_card_detector.py
+The script will activate your webcam. Show UNO cards to the webcam. The detected color and number will be displayed in real-time on the video feed. Press 'q' to quit the application.
+<<<<<
+<<<<<<<<Project Structure
+uno_card_detector.ipynb: Main script to start the webcam and process the video feed.
+models/: Directory containing the trained TensorFlow model.
+utils/: Contains utility scripts for image processing and color detection.
+Model Training
+Details about training the model are not included in this project. If you need to train the model:
+<<<<<<
+Collect a dataset of UNO cards with labeled images.
+Use a CNN architecture to train the model for number recognition.
+Save the trained model in the models/ directory.
+>>>>>>>>
+Contributing
+Contributions to this project are welcome. Please fork the repository, make your changes, and submit a pull request.
+<<<<<<
+Notes
+Adjust the repository URL and any specific paths or filenames as per your project's actual setup.
+If you have specific instructions or scripts for training the model, include those details in the README or link to additional documentation or scripts.
+Always ensure to include a license for your open source projects; MIT is a common choice, but choose what fits your needs best.
+This README should give users all the information they need to set up, run, and understand the basic functionality of your UNO card detection project.
